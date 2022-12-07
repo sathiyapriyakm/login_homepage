@@ -79,7 +79,7 @@ export function Login() {
         helperText={touched.Password && errors.Password ? errors.Password : ""}
       />
       <Button className="add-user-btn"
-        color="primary"
+        style={{backgroundColor:"turquoise"}}
         type="submit"
         variant="contained">Login</Button>
       <div className="text-center" style={{ color: "red" }}>
