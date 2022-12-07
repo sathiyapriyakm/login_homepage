@@ -21,7 +21,7 @@ const MenuProps = {
     },
 };
 
-const INITIAL_OPTIONS = ["red","blue","green","yellow","white","pink"]
+const INITIAL_OPTIONS = ["red","blue","green","yellow","white","pink","purple","brown","black"]
 
 export function DropDownComponent() {
     const [options, setOptions] = React.useState([]);
