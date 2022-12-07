@@ -14,7 +14,7 @@ export  function SimpleComponent({state,setState,name}) {
 
   return (
     <Box sx={{ minWidth: 120 }}>
-      <FormControl fullWidth>
+      <FormControl sx={{ m: 1, width: 200 }}>
         <InputLabel id="demo-simple-select-label">{name}</InputLabel>
         <Select
           labelId="demo-simple-select-label"

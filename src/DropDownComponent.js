@@ -67,7 +67,7 @@ export function DropDownComponent() {
                 <SimpleComponent state={searchabe} setState={setSearchable} name={"Searchable"} />
                 <SimpleComponent state={multiselect} setState={setMultiselect} name={"Multiselect"} />
             </div>
-            <FormControl sx={{ m: 1, width: 300 }}>
+            <FormControl sx={{ m: 1, width: 300 }} >
                 <InputLabel id="demo-multiple-checkbox-label">DropDown</InputLabel>
                 <Select
                     labelId="demo-multiple-checkbox-label"
