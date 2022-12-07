@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+body{
+  margin:auto;
+  width:100%;
+  padding:50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.add-user-form{
+  display:flex;
+  gap:25px;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+  padding:100px 100px;
+}
+.add-user-name{
+  width:400px;
+  height:50px;
+  /* margin-top: 10px; */
+}
+.add-user-btn{
+  width:400px;
+  height:50px;
+  font-size: 20px;;
+  background-color:skyblue;
+  /* margin-top: 10px; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.NotFoundImg{
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+  display:flex;
+  gap:25px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+img.displayed {
+  display: block;
+  height:600px;
+  width: 800px;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto 
+}
+@media screen and (max-width:768px){
+  
+  .add-user-name{
+    width:250px;
+    /* margin-top: 10px; */
+  }
+  .add-user-btn{
+    width:250px;
+  }
+
 }
 
-.App-link {
-  color: #61dafb;
+.addBeautician{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.addBeauticianForm {
+  width: 40%;
+}
+.addBeauticianbtngrp {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.addBeauticianBtn,
+.resetBtn {
+  width: 40%;
+}
+h3 {
+  text-align: center;
+}
+
+@media only screen and (max-width: 400px) {
+  .addBeauticianForm {
+    width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media only screen and (max-width: 600px) {
+  .addBeauticianForm {
+    width: 90%;
   }
+}
+
+@media only screen and (max-width: 900px) {
+  .addBeauticianForm {
+    width: 70%;
+  }
+}
+.SimpleSelect{
+  display:flex;
+  justify-content: space-evenly;
+  padding:50px 20px;
+}
+.SimpleButton{
+  display:flex;
+  justify-content: space-evenly;
+  padding:50px 20px;
 }
