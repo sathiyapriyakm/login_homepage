@@ -70,7 +70,7 @@ export function Login() {
       <TextField
         className="add-user-name"
         label="Password"
-        type="text"
+        type="password"
         value={values.Password}
         name="Password"
         onChange={handleChange}
