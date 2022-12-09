@@ -24,9 +24,9 @@ const MenuProps = {
 const INITIAL_OPTIONS = ["red","blue","green","yellow","white","pink","purple","brown","black"]
 
 export function DropDownComponent() {
-    const [options, setOptions] = React.useState([]);
-    const [searchabe, setSearchable] = React.useState(1);
-    const [multiselect, setMultiselect] = React.useState(1);
+    const [options, setOptions] = useState([]);
+    const [searchabe, setSearchable] = useState(1);
+    const [multiselect, setMultiselect] = useState(1);
     const [searchText, setSearchText] = useState("");
     const [submit, setSubmit] = useState(false);
 
@@ -55,6 +55,7 @@ export function DropDownComponent() {
 
     const containsText = (text, searchText) =>
         text.toLowerCase().indexOf(searchText.toLowerCase()) > -1;
+        
     const displayedOptions = useMemo(
         () => INITIAL_OPTIONS.filter((option) => containsText(option, searchText)),
         [searchText]
